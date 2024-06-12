@@ -1,6 +1,6 @@
 import config.VideoGameConfig;
 import config.VideoGameEndpoints;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;
 

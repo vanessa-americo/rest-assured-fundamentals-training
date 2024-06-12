@@ -4,7 +4,7 @@ import io.restassured.matcher.RestAssuredMatchers;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import objects.VideoGame;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.lessThan;
@@ -120,7 +120,7 @@ public class VideoGameTest extends VideoGameConfig {
     }
 
     @Test
-    public void testConvertionFromJSONToPOJO() {
+    public void testConversionFromJSONToPOJO() {
         Response response =
                 given()
                         .pathParam("videoGameId", 5)

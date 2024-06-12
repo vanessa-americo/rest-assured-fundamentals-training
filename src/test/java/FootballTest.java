@@ -1,15 +1,15 @@
 import config.FootballConfig;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Disabled;
 
 import java.util.List;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.core.IsEqual.equalTo;
 
-@Ignore
+@Disabled
 public class FootballTest extends FootballConfig {
 
     @Test
