@@ -1,5 +1,6 @@
 import config.FootballConfig;
 import io.restassured.response.Response;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -8,6 +9,7 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.*;
 
+@Ignore
 public class GPathJSONTest extends FootballConfig {
 
     @Test

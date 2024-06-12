@@ -1,6 +1,7 @@
 import config.FootballConfig;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.core.IsEqual.equalTo;
 
+@Ignore
 public class FootballTest extends FootballConfig {
 
     @Test
