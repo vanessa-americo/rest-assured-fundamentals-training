@@ -6,13 +6,18 @@ on:
   pull_request:
     branches:  [ "main" ]
 
-jobs:
-  test:
+  workflow_dispatch:
 
+jobs:
+  builds:
+
+    name: Build and Run REST Assured Tests with Maven
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
@@ -20,7 +25,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Build and Run REST Assured Tests with Maven
+      - name: Build and Run API Tests
         run: mvn clean test
         continue-on-error: true
 
